@@ -7,7 +7,7 @@ header {
  	clear: both;
 
  	#logo {
- 		@include col-2();
+ 		@include col-12();
  		font-weight: bold;
  		a {
  			border: none;
