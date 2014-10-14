@@ -1,12 +1,4 @@
-Lumbr
+PageHub
 =============
 
-Lumber is a front-end framework.
-
-
-How to use
--------
-
-Main layout settings: _settings.scss
-
-Your styling: _layout.scss
+A mysterious hyper cool thing that will revolutionize how you create your digital stuff.
