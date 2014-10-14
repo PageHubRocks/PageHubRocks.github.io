@@ -56,7 +56,8 @@ header {
 	 		@include animate();
 	 		@include fadeInLeft();
 	 		margin-top: fnGetSpacing(25);
-	 		animation-delay: 600ms;float: left;
+	 		animation-delay: 600ms;
+	 		float: left;
 	 		clear: both;
 	 		border: 1px solid #999;
 	 		padding: fnGetSpacing(50);
@@ -67,7 +68,62 @@ header {
 	 			border: #000;
 	 		}
 	 	}	
+	 	#mc_embed_signup {
+	 		clear: both;
+	 		width: 100%;
+	 		margin-top: fnGetSpacing(200);
+	 		input[type="email"]{
+		 		@include animate();
+		 		@include fadeInLeft();
+		 		animation-delay: 800ms;
+	 			margin-bottom: fnGetSpacing(50);
+	 			padding-bottom: fnGetSpacing(25);
+	 			border: 1px solid rgba(0, 0, 0, 0);
+	 			border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	 			padding-left: 0;
+	 			color: #666;
+	 			&:focus {
+	 			border: 1px solid rgba(0, 0, 0, 0);
+					border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+	 			}
+	 			max-width: 300px;
+	 			font-size: 110%;
+	 		}
+	 		input[type="submit"]{
+	 			font-size: 100%;
+	 			@include animate();
+		 		@include fadeInLeft();
+		 		animation-delay: 1s;
+	 			margin-bottom: fnGetSpacing(50);
+	 			border: 1px solid rgba(0, 0, 0, 0.1);
+	 			background: #fff;
+	 			width: auto;
+	 			border: 1px solid rgba(0, 0, 0, 0);
+	 			border-bottom: 1px solid rgba(0, 0, 0, 0);
+	 			padding-left: 0;
+	 			padding-right: 0;
+	 			margin-right: fnGetSpacing(10);
+	 			margin-top: 0;
+	 			padding-top: 0;
+	 			color: #666;
+	 			& + span {
+	 				visibility: hidden;
+			 		transition: all ease 200ms;
+	 				opacity: 0;
+	 			}
+	 			&:hover {
+	 				border: 1px solid rgba(0, 0, 0, 0);
+	 				color: #000;
+					& + span {
+		 				visibility: visible;
+		 				opacity: 1;
+		 				transition: all ease 200ms;
+		 			}
+	 			}
+	 		}
+	 	}
  	}
+
 }
 
 main {
